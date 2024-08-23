@@ -32,6 +32,7 @@ public class ProductController {
 
    
     @PutMapping("/products/{prodId}")
+//    this updates the details of the product
     public void updateProducts(@PathVariable long prodId, @RequestBody Products products){
         new Products(service.updateProduct(products,prodId));
     }
