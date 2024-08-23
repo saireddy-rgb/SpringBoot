@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="products2" />
+        <module name="simpleWebApp" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="api" target="21" />
+      <module name="curd2" target="21" />
+      <module name="curd3" target="21" />
+      <module name="demoApp" target="21" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="api" options="-parameters" />
+      <module name="curd2" options="-parameters" />
+      <module name="curd3" options="-parameters" />
+      <module name="demoApp" options="-parameters" />
+      <module name="products2" options="-parameters" />
+      <module name="simpleWebApp" options="-parameters" />
+    </option>
+  </component>
+</project>
