@@ -1,4 +1,4 @@
-package com.saireddy.products2.model;
+package com.saireddy.spring_security2.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -11,11 +11,10 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "products_list")
-public class Products {
+@Table(name = "users")
+public class Users {
     @Id
-    private long prodId;
-    private String prodName;
-    private int price;
-
+    private long userId;
+    private String  userName;
+    private String userRole;
 }
